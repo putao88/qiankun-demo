@@ -10,29 +10,24 @@
 
 ![架构图](http://shadows-mall.oss-cn-shenzhen.aliyuncs.com/images/blogs/qiankun_practice/8.png)
 
-![效果图](http://shadows-mall.oss-cn-shenzhen.aliyuncs.com/images/blogs/qiankun_practice/42.png)
-
 ## 如何运行
 
 > 本项目使用的端口为 `9999、10100、10200、10300`，运行前请确保这几个端口的空闲。
 >
 > 如果需要调试项目查看效果，建议手动启动主应用和所需的微应用。
 
-本仓库基于 `qiankun` 实现微前端架构，运行命令（全量启动）如下：
-
-```bash
-yarn install
-yarn examples:install
-yarn examples:start
-```
+本仓库基于 `qiankun` 实现微前端架构，运行命令（进入各个项目,用相应命令行启动）如下：
+>  main: yarn serve
+> react-app: npm run start
+>  vue:-app: yarn serve
+> static-app: npm run start
 
 ## 分支说明
 
 `master` 为稳定分支，其他分支根据 [qiankun 实战系列教程](https://github.com/a1029563229/blogs) 划分：
 
-  - `master`：稳定分支，可以直接作为 `qiankun-quick-start` 使用；
+  - `main`：稳定分支，可以直接作为 `qiankun-quick-start` 使用；
   - `feature-inject-sub-apps`：主应用基座搭建、微应用接入方案；
-  - `feature-deploy`：应用部署发布方案；
   - `feature-communication`：官方通信方案；
   - `feature-communication-shared`：`Shared` 通信方案；
 

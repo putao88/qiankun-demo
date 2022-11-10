@@ -49,7 +49,7 @@ export default {
         },
         {
           key: "VueMicroAppList",
-          title: "Vue 列表页",
+          title: "Vue 微应用列表页",
           path: "/vue/list"
         },
         {
