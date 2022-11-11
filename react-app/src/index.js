@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "antd/dist/antd.css";
 
 import "./public-path";
 import App from "./App";
+import actions from "./shared/actions";
 
 /**
  * 渲染函数
  * 两种情况：主应用生命周期钩子中运行 / 微应用单独启动时运行
  */
-function render() {
+function render(props=null) {
+  if (props) {
+    actions.setActions(props)
+  }
   ReactDOM.render(<App />, document.getElementById("root"));
 }
 

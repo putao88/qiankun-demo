@@ -56,6 +56,11 @@ export default {
           key: "StaticMicroApp",
           title: "Static 微应用",
           path: "/static"
+        },
+        {
+          key: "Login",
+          title: "登录",
+          path: "/login"
         }
       ],
     };
