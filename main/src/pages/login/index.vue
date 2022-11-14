@@ -28,7 +28,6 @@ export default {
   },
   methods: {
     login() {
-      // ApiLoginQuickly 是一个远程登录函数，用于获取 token，详见 Demo
       this.token = '7gdr6ok53dhj7q4p6v1ofmiji5'
       // 登录成功后，设置 token
       actions.setGlobalState({ token: this.token });
